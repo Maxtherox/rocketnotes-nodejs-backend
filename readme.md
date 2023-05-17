@@ -3,6 +3,11 @@
 Introdução
 Esta é a documentação do backend de uma aplicação web de notas, que utiliza as tecnologias Node.js, Express, Knex e Query Builder. A API permite a criação, leitura, atualização e remoção de notas, além de permitir que o usuário associe tags às suas notas.
 
+Configuração inicial:
+
+npm install (instala todas as dependencias)
+npm run dev (Inicia o servidor local em nodemon)
+
 Rotas de notas
 GET /notes
 Retorna todas as notas do usuário.
