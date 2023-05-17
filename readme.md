@@ -9,18 +9,39 @@ Retorna todas as notas do usuário.
 
 Exemplo de resposta
 css
-Copy code
-[  {    "id": 1,    "title": "Nota 1",    "description": "Descrição da nota 1",    "created_at": "2022-05-10T18:00:00.000Z",    "updated_at": "2022-05-10T18:00:00.000Z",    "tags": [      {        "id": 1,        "name": "Tag 1",        "created_at": "2022-05-10T18:00:00.000Z",        "updated_at": "2022-05-10T18:00:00.000Z"      },      {        "id": 2,        "name": "Tag 2",        "created_at": "2022-05-10T18:00:00.000Z",        "updated_at": "2022-05-10T18:00:00.000Z"      }    ]
-  },
-  {
-    "id": 2,
-    "title": "Nota 2",
-    "description": "Descrição da nota 2",
+Copy code 
+`
+[  {   
+"id": 1,    
+"title": "Nota 1", 
+"description": "Descrição da nota 1",
+"created_at": "2022-05-10T18:00:00.000Z",
+"updated_at": "2022-05-10T18:00:00.000Z",
+"tags": 
+[      
+{  
+    "id": 1,        "name": "Tag 1",
     "created_at": "2022-05-10T18:00:00.000Z",
-    "updated_at": "2022-05-10T18:00:00.000Z",
-    "tags": []
+    "updated_at": "2022-05-10T18:00:00.000Z"
+},
+{        
+    "id": 2,
+    "name": "Tag 2",
+    "created_at": "2022-05-10T18:00:00.000Z",
+    "updated_at": "2022-05-10T18:00:00.000Z"
+}    
+]
+},
+{
+"id": 2,
+"title": "Nota 2",
+"description": "Descrição da nota 2",
+"created_at": "2022-05-10T18:00:00.000Z",
+"updated_at": "2022-05-10T18:00:00.000Z",
+"tags": []
   }
 ]
+`
 POST /notes
 Cria uma nova nota.
 
@@ -29,16 +50,15 @@ title: título da nota.
 description: descrição da nota.
 tags (opcional): lista de tags associadas à nota.
 Exemplo de corpo da requisição
-json
-Copy code
+`
 {
   "title": "Nota 1",
   "description": "Descrição da nota 1",
   "tags": ["Tag 1", "Tag 2"]
 }
+`
 Exemplo de resposta
-json
-Copy code
+`
 {
   "id": 1,
   "title": "Nota 1",
@@ -46,12 +66,12 @@ Copy code
   "created_at": "2022-05-10T18:00:00.000Z",
   "updated_at": "2022-05-10T18:00:00.000Z"
 }
+`
 GET /notes/:id
 Retorna uma nota pelo ID.
 
 Exemplo de resposta
-json
-Copy code
+`
 {
   "id": 1,
   "title": "Nota 1",
@@ -73,9 +93,7 @@ Copy code
     }
     ]
 }
-
-markdown
-Copy code
+`
 
 #### PUT /notes/:id
 
@@ -88,17 +106,17 @@ Atualiza uma nota pelo ID.
 - `tags` (opcional): nova lista de tags associadas à nota.
 
 ##### Exemplo de corpo da requisição
-
+`
 {
 "title": "Novo título",
 "tags": ["Tag 1", "Tag 3"]
 }
-
+`
 shell
 Copy code
 
 ##### Exemplo de resposta
-
+`
 {
 "id": 1,
 "title": "Novo título",
@@ -106,9 +124,7 @@ Copy code
 "created_at": "2022-05-10T18:00:00.000Z",
 "updated_at": "2022-05-11T10:00:00.000Z"
 }
-
-shell
-Copy code
+`
 
 #### DELETE /notes/:id
 
@@ -121,7 +137,7 @@ Remove uma nota pelo ID.
 Retorna todas as tags do usuário.
 
 ##### Exemplo de resposta
-
+`
 [
 {
 "id": 1,
@@ -161,6 +177,7 @@ Retorna todas as tags do usuário.
 ]
 }
 ]
+`
 #### POST /tags
 
 Cria uma nova tag.
@@ -170,35 +187,34 @@ Cria uma nova tag.
 - `name`: nome da tag.
 
 ##### Exemplo de corpo da requisição
-
+`
 {
 "name": "Tag 1"
 }
+`
 
-shell
-Copy code
 
 ##### Exemplo de resposta
-
+`
 {
 "id": 1,
 "name": "Tag 1",
 "created_at": "2022-05-10T18:00:00.000Z",
 "updated_at": 
+`
 PUT /tags/:id
 Atualiza uma tag pelo ID.
 
 Corpo da requisição
 name (opcional): novo nome da tag.
 Exemplo de corpo da requisição
-json
-Copy code
+`
 {
   "name": "Nova tag"
 }
+`
 Exemplo de resposta
-json
-Copy code
+`
 {
   "id": 1,
   "name": "Nova tag",
@@ -206,6 +222,7 @@ Copy code
   "updated_at": "2022-05-11T10:00:00.000Z"
 }
 }
+`
 DELETE /tags/:id
 Remove uma tag pelo ID.
 
