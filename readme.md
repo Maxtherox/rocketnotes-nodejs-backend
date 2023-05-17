@@ -1,4 +1,5 @@
-#API Criada durante o curso explorer no site Rocketseat
+# API Criada durante o curso explorer no site Rocketseat
+
 
 Introdução
 Esta é a documentação do backend de uma aplicação web de notas, que utiliza as tecnologias Node.js, Express, Knex e Query Builder. A API permite a criação, leitura, atualização e remoção de notas, além de permitir que o usuário associe tags às suas notas.
