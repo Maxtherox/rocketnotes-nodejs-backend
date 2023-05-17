@@ -8,8 +8,6 @@ GET /notes
 Retorna todas as notas do usuário.
 
 Exemplo de resposta
-css
-Copy code 
 ```
 [  {   
 "id": 1,    
@@ -50,15 +48,16 @@ title: título da nota.
 description: descrição da nota.
 tags (opcional): lista de tags associadas à nota.
 Exemplo de corpo da requisição
-`
+``` 
 {
   "title": "Nota 1",
   "description": "Descrição da nota 1",
   "tags": ["Tag 1", "Tag 2"]
 }
-`
+```
 Exemplo de resposta
-`
+
+```
 {
   "id": 1,
   "title": "Nota 1",
@@ -66,12 +65,12 @@ Exemplo de resposta
   "created_at": "2022-05-10T18:00:00.000Z",
   "updated_at": "2022-05-10T18:00:00.000Z"
 }
-`
+```
 GET /notes/:id
 Retorna uma nota pelo ID.
 
 Exemplo de resposta
-`
+``` 
 {
   "id": 1,
   "title": "Nota 1",
@@ -93,7 +92,7 @@ Exemplo de resposta
     }
     ]
 }
-`
+```
 
 #### PUT /notes/:id
 
@@ -106,17 +105,17 @@ Atualiza uma nota pelo ID.
 - `tags` (opcional): nova lista de tags associadas à nota.
 
 ##### Exemplo de corpo da requisição
-`
+```
 {
 "title": "Novo título",
 "tags": ["Tag 1", "Tag 3"]
 }
-`
+```
 shell
 Copy code
 
 ##### Exemplo de resposta
-`
+```
 {
 "id": 1,
 "title": "Novo título",
@@ -124,7 +123,7 @@ Copy code
 "created_at": "2022-05-10T18:00:00.000Z",
 "updated_at": "2022-05-11T10:00:00.000Z"
 }
-`
+```
 
 #### DELETE /notes/:id
 
@@ -137,7 +136,7 @@ Remove uma nota pelo ID.
 Retorna todas as tags do usuário.
 
 ##### Exemplo de resposta
-`
+```
 [
 {
 "id": 1,
@@ -177,7 +176,7 @@ Retorna todas as tags do usuário.
 ]
 }
 ]
-`
+```
 #### POST /tags
 
 Cria uma nova tag.
@@ -187,34 +186,34 @@ Cria uma nova tag.
 - `name`: nome da tag.
 
 ##### Exemplo de corpo da requisição
-`
+```
 {
 "name": "Tag 1"
 }
-`
+```
 
 
 ##### Exemplo de resposta
-`
+```
 {
 "id": 1,
 "name": "Tag 1",
 "created_at": "2022-05-10T18:00:00.000Z",
 "updated_at": 
-`
+```
 PUT /tags/:id
 Atualiza uma tag pelo ID.
 
 Corpo da requisição
 name (opcional): novo nome da tag.
 Exemplo de corpo da requisição
-`
+```
 {
   "name": "Nova tag"
 }
-`
+```
 Exemplo de resposta
-`
+```
 {
   "id": 1,
   "name": "Nova tag",
@@ -222,7 +221,7 @@ Exemplo de resposta
   "updated_at": "2022-05-11T10:00:00.000Z"
 }
 }
-`
+```
 DELETE /tags/:id
 Remove uma tag pelo ID.
 
