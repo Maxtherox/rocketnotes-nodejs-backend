@@ -10,7 +10,7 @@ Retorna todas as notas do usuário.
 Exemplo de resposta
 css
 Copy code 
-`
+```
 [  {   
 "id": 1,    
 "title": "Nota 1", 
@@ -41,7 +41,7 @@ Copy code
 "tags": []
   }
 ]
-`
+```
 POST /notes
 Cria uma nova nota.
 
