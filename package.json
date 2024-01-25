@@ -1,7 +1,7 @@
 {
-  "name": "api",
+  "name": "api-test-express",
   "version": "1.0.0",
-  "description": "Api desenvolvida no programa explorer da Rocketseat",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/server.js",
@@ -9,17 +9,20 @@
     "migrate": "knex migrate:latest"
   },
   "keywords": [],
-  "author": "Guilherme Pereira",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
-    "knex": "^2.4.2",
-    "sqlite": "^4.1.2",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "multer": "^1.4.5-lts.1",
+    "sqlite": "^5.1.1",
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.1"
   }
 }
