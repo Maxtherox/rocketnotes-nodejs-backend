@@ -126,10 +126,6 @@ Isso iniciará os testes definidos na aplicação e fornecerá informações sob
 
 Contribuições são bem-vindas! Se você encontrar problemas, bugs ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença
-
-Este projeto é licenciado sob a Licença ISC - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
-
 ---
 
 Esperamos que o RocketNotes Node.js Backend facilite o desenvolvimento de suas aplicações de gerenciamento de notas. Sinta-se à vontade para explorar, modificar e contribuir para este projeto!
